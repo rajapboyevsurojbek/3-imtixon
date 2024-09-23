@@ -1,0 +1,68 @@
+.craftum {
+  padding: 50px 0;
+  &__link {
+    color: white;
+    font-weight: 700;
+    font-size: 56px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    padding: 150px 0 52px 0;
+  }
+
+  &__list {
+    color: white;
+    width: 50%;
+    margin: auto;
+    background: #ffffff0d;
+  }
+
+  &__list__item:hover {
+    background: #ffffff0d;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    border-radius: 8px;
+    padding: 32px 40px;
+    transition: 1s;
+    background: #FFFFFF0D;
+    overflow: hidden;
+  }
+
+
+  &__info:hover {
+    background: #FFFFFF1A;
+  }
+  
+
+  &__info:hover &__text {
+    display: block;
+    max-height: 100px;
+  }
+
+  &__text {
+    display: none;
+    padding-top: 10px;
+  }
+
+  &__info:hover &__bottom {
+    transform: rotate(180deg);
+    transition: 1s;
+  }
+
+  &__bottom {
+    display: block;
+    padding: 5.17px 5.17px;
+  }
+
+  @media screen and (max-width: 435px) {
+    .craftum {
+        &__list {
+            width: 100%;
+        }
+    }
+  }
+}

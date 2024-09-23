@@ -1,0 +1,67 @@
+.gaming {
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 152px;
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+  }
+  &__title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 72.8px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    width: 568px;
+    color: #ffffff;
+  }
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #ffffff;
+  }
+  &__btn {
+    padding: 16px 24px 16px 24px;
+    gap: 24px;
+    border-radius: 4px 0px 0px 0px;
+    background: #3ddeed1a;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24.3px;
+    text-align: center;
+    color: #3ddeed;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  &__right {
+    display: flex;
+    position: relative;
+  }
+
+  &__img1 {
+    
+  }
+  &__img2 {
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    left: 0px;
+    margin-left: -68px;
+    margin-bottom: -82px;
+  }
+}
+
+@media (max-width: 435px) {
+  .gaming{
+    &__wrapper{
+      flex-direction: column;
+    }
+  }
+}

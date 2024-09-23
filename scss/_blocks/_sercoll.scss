@@ -1,0 +1,57 @@
+.sercoll {
+  &__control::-webkit-scrollbar {
+    width: 1px;
+  }
+
+  &__control {
+    display: flex;
+    overflow-x: auto;
+    gap: 53px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    color: white;
+    padding-top: 15px;
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0 50px 0;
+    color: white;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 56px;
+  }
+
+  &__number-color {
+    color: #3ddeed;
+  }
+
+  &__btn {
+    gap: 16px;
+  }
+
+  @media screen and (max-width: 435px) {
+    .sercoll {
+        &__text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__btn {
+            display: none;
+        }
+    }
+}
+}
