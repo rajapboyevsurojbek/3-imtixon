@@ -13,10 +13,11 @@ li {
 
 body {
   background-color: #0f041c;
+  overflow-x: hidden;
 }
 
 .container {
-  width: 100%;
+  width: 90%;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -24,6 +25,22 @@ body {
   .container {
     max-width: 370px;
   }
+}
+
+.wrapper {
+  background-image: url("./../img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn:hover {
+  box-shadow: 0px 20px 49px 0px rgba(61, 222, 237, 0.168627451);
+  background-color: rgba(153, 205, 50, 0.773);
+}
+
+.btn {
+  transition: 1s;
+  border-radius: 8px;
 }
 
 .header__nav {
@@ -109,6 +126,9 @@ body {
 }
 .sercoll__control::-webkit-scrollbar {
   width: 1px;
+}
+.sercoll__wrapper {
+  padding-top: 190px;
 }
 .sercoll__control {
   display: flex;
@@ -210,7 +230,6 @@ body {
   border: none;
   border-radius: 4px;
   background-color: #3ddeed;
-  box-shadow: 0px 20px 49px 0px rgba(61, 222, 237, 0.168627451);
   font-size: 18px;
   font-weight: 500;
   line-height: 24.3px;
@@ -412,7 +431,7 @@ body {
 .gaming__btn {
   padding: 16px 24px 16px 24px;
   gap: 24px;
-  border-radius: 4px 0px 0px 0px;
+  border-radius: 4px;
   background: rgba(61, 222, 237, 0.1019607843);
   font-size: 18px;
   font-weight: 500;
@@ -439,6 +458,34 @@ body {
 @media (max-width: 435px) {
   .gaming__wrapper {
     flex-direction: column;
+  }
+  .gaming__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31.2px;
+    letter-spacing: -0.02em;
+    text-align: left;
+  }
+  .gaming__text {
+    width: 344px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+  }
+  .gaming__right {
+    flex-direction: column;
+  }
+  .gaming__img1 {
+    width: 350px;
+    height: 363px;
+  }
+  .gaming__img2 {
+    margin: 0px;
+    margin-bottom: -150px;
+    width: 350px;
+    height: 282px;
+    position: absolute;
   }
 }
 .craftum {
@@ -505,6 +552,10 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.footer__form input {
+  outline: none;
+  border-radius: 4px 0px 0px 4px;
+}
 .footer__icons {
   color: white;
   padding-top: 30px;
@@ -546,6 +597,8 @@ body {
 }
 .footer__form {
   display: flex;
+  border-radius: 4px;
+  border: 1px;
 }
 .footer__input {
   background: rgba(255, 255, 255, 0.0509803922);
@@ -553,9 +606,10 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .footer__btn {
+  padding: 22px 29px;
+  border-radius: 0px 4px 4px 0px;
   background: #3ddeed;
-  color: #0f041c;
-  padding: 0 20px;
+  border: none;
 }
 .footer__hr {
   padding: 30px 0;

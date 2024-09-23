@@ -5,6 +5,10 @@
     display: flex;
     justify-content: space-between;
   }
+  &__form input {
+    outline: none;
+    border-radius: 4px 0px 0px 4px;
+  }
 
   &__icons {
     color: white;
@@ -57,6 +61,8 @@
 
   &__form {
     display: flex;
+    border-radius: 4px;
+    border: 1px;
   }
 
   &__input {
@@ -66,9 +72,10 @@
   }
 
   &__btn {
+    padding: 22px 29px;
+    border-radius: 0px 4px 4px 0px;
     background: #3ddeed;
-    color: #0f041c;
-    padding: 0 20px;
+    border: none;
   }
 
   &__hr {
@@ -88,31 +95,30 @@
     padding: 20px 0;
   }
 
-  @media  (max-width: 435px) {
+  @media (max-width: 435px) {
     .footer {
+      &__wrapper {
+        display: block;
+        flex-direction: column;
+      }
 
-        &__wrapper {
-            display: block;
-            flex-direction: column;
-        }
+      &__form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 24px;
+      }
 
-        &__form {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            gap: 24px;
-        }
+      &__btn {
+        height: 40px;
+      }
 
-        &__btn {
-            height: 40px;
-        }
-
-        &__link {
-            display: none;
-        }
-        &__link-control {
-            display: flex;
-        }
+      &__link {
+        display: none;
+      }
+      &__link-control {
+        display: flex;
+      }
     }
   }
 }
